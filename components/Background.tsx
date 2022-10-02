@@ -31,7 +31,7 @@ const Background = ({}: Props) => {
   return (
     <div className='relative pt-20 h-screen w-full'>
       <div className='absolute inset-0 h-screen w-[250px] bg-bwport-100 z-0' />
-      <div className='relative w-full gridMobile z-10'>
+      <div className='overflow-x-hidden relative w-full gridMobile z-10'>
         <h1 className='col-span-4 mb-4 text-center text-2xl text-bwport-400'>
           background
         </h1>
