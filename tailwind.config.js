@@ -12,6 +12,7 @@ module.exports = {
       colors: {
         bwport: {
           0: '#ffffff',
+          10: '#f8f8f8',
           100: '#ececec',
           200: '#b9b9b9',
           300: '#ababab',
