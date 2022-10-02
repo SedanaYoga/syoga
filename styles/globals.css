@@ -16,6 +16,6 @@ body {
 
 @layer components {
   .gridMobile {
-    @apply grid grid-cols-8;
+    @apply grid grid-cols-4 gap-x-5;
   }
 }

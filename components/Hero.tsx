@@ -26,7 +26,7 @@ const Hero = ({}: Props) => {
 
   return (
     <div className='relative h-[calc(100vh-60px)] w-full gridMobile'>
-      <div className='mt-[-200px] flex flex-col justify-center items-center font-bold text-2xl col-span-8'>
+      <div className='mt-[-200px] flex flex-col justify-center items-center font-bold text-2xl col-span-4'>
         <motion.div
           className='text-center'
           variants={variants.heroTextParent}
@@ -73,7 +73,7 @@ const Hero = ({}: Props) => {
           </motion.div>
         </motion.div>
       </div>
-      <div className='absolute bottom-5 inset-x-auto col-span-8 pt-12 px-4 bg-bwport-100 pb-5'>
+      <div className='absolute bottom-5 inset-x-auto col-span-4 pt-12 px-4 bg-bwport-100 pb-5'>
         <h1 className='text-sm font-semibold mb-2 text-bwport-500'>
           Hi, call me <span className='underline'>Yoga</span>
         </h1>
