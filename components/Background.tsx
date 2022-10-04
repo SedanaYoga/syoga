@@ -73,7 +73,10 @@ const Background = ({}: Props) => {
             </p>
           </motion.div>
         </motion.div>
-        <CButton className='col-span-3 col-start-2 mt-10 bg-bwport-500 text-bwport-100'>
+        <CButton
+          className='col-span-3 col-start-2 mt-10 text-bwport-100'
+          color='dark'
+        >
           see what I can do
         </CButton>
       </div>
