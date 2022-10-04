@@ -8,7 +8,7 @@ type Props = {}
 
 const Nav = ({}: Props) => {
   return (
-    <nav className='w-full flex flex-row justify-center items-center h-[60px] fixed z-10'>
+    <nav className='w-full flex flex-row justify-center items-center h-[60px] fixed z-50'>
       <Link href='/'>
         <a className='h-[40px]'>
           <motion.div
@@ -22,7 +22,7 @@ const Nav = ({}: Props) => {
             }}
           >
             <Image
-              src='https://firebasestorage.googleapis.com/v0/b/portal-6902c.appspot.com/o/images%2Fprofile-ava.png?alt=media&token=20f8b944-6e48-4ac9-9107-5f7583d72db6'
+              src='https://firebasestorage.googleapis.com/v0/b/portal-6902c.appspot.com/o/images%2Fprofile%2Fprofile-ava.png?alt=media&token=14256413-e79d-4b23-bda1-d08c00f7b72f'
               alt='logo'
               width='40'
               height='40'

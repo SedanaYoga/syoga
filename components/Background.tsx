@@ -42,7 +42,7 @@ const Background = ({}: Props) => {
           className='relative aspect col-span-3 h-auto col-start-2 bg-bwport-400'
         >
           <Image
-            src='https://firebasestorage.googleapis.com/v0/b/portal-6902c.appspot.com/o/images%2Fprofile-casual.png?alt=media&token=050dcc51-4cb3-4bbd-98c2-8ac6fe44a34d'
+            src='https://firebasestorage.googleapis.com/v0/b/portal-6902c.appspot.com/o/images%2Fprofile%2Fprofile-casual-pale.png?alt=media&token=a76deeeb-dc95-4adf-ab5f-a2a4981628f9'
             alt='background-image'
             layout='responsive'
             width={257}

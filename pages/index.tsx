@@ -3,6 +3,7 @@ import Head from 'next/head'
 import Background from '../components/Background'
 import Hero from '../components/Hero'
 import Nav from '../components/Nav'
+import Projects from '../components/Projects'
 
 const Home: NextPage = () => {
   return (
@@ -20,9 +21,16 @@ const Home: NextPage = () => {
       <Nav />
 
       {/* Main Section */}
-      <main className='flex relative top-[60px] flex-col w-full px-[20px]'>
-        <Hero />
-        <Background />
+      <main className='flex relative top-[60px] flex-col w-full px-[20px] z-20'>
+        <section id='hero'>
+          <Hero />
+        </section>
+        <section id='background'>
+          <Background />
+        </section>
+        <section id='projects'>
+          <Projects />
+        </section>
       </main>
     </div>
   )

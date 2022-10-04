@@ -1,24 +1,27 @@
-import React, { FC, HTMLAttributes, ReactNode } from 'react'
+import React, { forwardRef, HTMLProps } from 'react'
+import { selectButtonColor } from '../utils/components.utils'
 
-type Props = {
-  className?: string
-  type?: 'submit' | 'reset' | 'button'
-  children: ReactNode
+type Props = HTMLProps<HTMLAnchorElement> & {
+  color: 'light' | 'mid' | 'dark'
 }
 
-type ComponentHTML = FC<Props> & HTMLAttributes<HTMLButtonElement>
+const CButton = forwardRef<HTMLAnchorElement, Props>(
+  ({ children, color, className, onClick, href }, ref) => {
+    const selectedColor = selectButtonColor(color)
+    return (
+      <a
+        href={href}
+        onClick={onClick}
+        ref={ref}
+        className={`${className} text-sm text-center text-white font-normal bg-bwport-${selectedColor} px-[2rem] py-3`}
+      >
+        {children}
+      </a>
+    )
+  },
+)
 
-const CButton: ComponentHTML = ({ children, type, className }: Props) => {
-  return (
-    <button
-      type={type}
-      className={`text-sm text-white font-normal bg-bwport-200 px-[2rem] py-3 ${className}`}
-    >
-      {children}
-    </button>
-  )
-}
-
+CButton.displayName = 'CButton'
 CButton.defaultProps = {
   type: 'button',
 }

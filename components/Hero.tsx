@@ -1,6 +1,7 @@
 import React from 'react'
 import { motion } from 'framer-motion'
 import CButton from './CButton'
+import Link from 'next/link'
 
 type Props = {}
 
@@ -68,8 +69,16 @@ const Hero = ({}: Props) => {
             }}
             className='flex flex-col justify-center items-center gap-4'
           >
-            <CButton className='w-full'>background</CButton>
-            <CButton className='w-full bg-bwport-400'>skills</CButton>
+            <Link href='/#background' passHref>
+              <CButton className='w-full' color='light'>
+                background
+              </CButton>
+            </Link>
+            <Link href='/#projects' passHref>
+              <CButton className='w-full' color='mid'>
+                projects
+              </CButton>
+            </Link>
           </motion.div>
         </motion.div>
       </div>
