@@ -40,6 +40,7 @@ const Background = ({}: Props) => {
           whileInView={{ x: 0, opacity: 1 }}
           transition={{ duration: 1 }}
           className='relative aspect col-span-3 h-auto col-start-2 bg-bwport-400'
+          viewport={{ once: true }}
         >
           <Image
             src='https://firebasestorage.googleapis.com/v0/b/portal-6902c.appspot.com/o/images%2Fprofile%2Fprofile-casual-pale.png?alt=media&token=a76deeeb-dc95-4adf-ab5f-a2a4981628f9'
@@ -54,6 +55,7 @@ const Background = ({}: Props) => {
           variants={variants.bgText}
           initial='hidden'
           whileInView='show'
+          viewport={{ once: true }}
           className='col-start-2 col-span-3 text-bwport-500'
         >
           <motion.div variants={variants.bgTextItem} className=' text-xs mt-5 '>
