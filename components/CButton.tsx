@@ -13,7 +13,7 @@ const CButton = forwardRef<HTMLAnchorElement, Props>(
         href={href}
         onClick={onClick}
         ref={ref}
-        className={`${className} text-sm text-center text-white font-normal bg-bwport-${selectedColor} px-[2rem] py-3`}
+        className={`${className} bg-bwport-${selectedColor} text-sm text-center text-white font-normal px-[2rem] py-3`}
       >
         {children}
       </a>
@@ -23,7 +23,7 @@ const CButton = forwardRef<HTMLAnchorElement, Props>(
 
 CButton.displayName = 'CButton'
 CButton.defaultProps = {
-  type: 'button',
+  color: 'light',
 }
 
 export default CButton

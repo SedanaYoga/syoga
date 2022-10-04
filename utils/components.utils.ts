@@ -6,7 +6,5 @@ export const selectButtonColor = (color: string | undefined) => {
       return '400'
     case 'dark':
       return '500'
-    default:
-      return '200'
   }
 }

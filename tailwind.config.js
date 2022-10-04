@@ -22,5 +22,10 @@ module.exports = {
       },
     },
   },
+  safelist: [
+    {
+      pattern: /bg-bwport-(200|400|500)/,
+    },
+  ],
   plugins: [],
 }
